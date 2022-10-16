@@ -28,5 +28,9 @@ The power of the diamond is in the fallback function and delegatecall which enab
 
 > The msg.sender and msg.value values do not change and only the diamond's storage is read and written to.
 
+#### Delegatecall
+
+
+
 
 
