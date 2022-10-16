@@ -1,3 +1,3 @@
 # Table of contents
 
-* [Introduction](README.md)
+* [Introduction To Diamonds](README.md)
