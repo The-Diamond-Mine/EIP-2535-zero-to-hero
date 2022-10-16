@@ -8,6 +8,8 @@ It is a common knowledge that the blockchain is an immutable digital ledger of t
 
 Let's look at a scenario where a developer discovers a bug in a contract that is being used and holds a large amount of funds, that bug can't be fixed because of the immutable nature of the blockchain, hence the need for smart contract upgradability became pertinent.
 
+Let's look at another scenario where you have a smart contract with a large codebase (many lines of code) or possibly a smart contract that inherited many other contracts. When compiling such contract it may fail to compile because the size exceeds the contract size limit which is 24KB. This limitation is not possible when using the Diamond Standard because contracts are separated as facets (individual contracts) and the functions they contain are called from one main/parent contract called the Diamond contract.
+
 #### What is Diamond?
 
 A diamond is a contract with external functions that are supplied by contracts called facets. While facets are separate, independent contracts that can store internal functions, libraries and state variables.
