@@ -30,6 +30,13 @@ The power of the diamond is in the fallback function and delegatecall which enab
 
 #### Delegatecall
 
+Delegatecall is a low level call that enables you to call functions from other contracts, but the state or storage of the calling contract gets updated or set.\
+\
+Let's say we have two contracts A and B, when contract `A` executes `delegatecall` to contract `B`, contract `B`'s code is executed with contract `A`'s storage, `msg.sender` and `msg.value`. This means, the logic and code execution takes place in contract B, but the storage of contract A get modified.
+
+```
+```
+
 
 
 
