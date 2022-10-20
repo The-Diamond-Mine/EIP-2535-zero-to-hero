@@ -103,7 +103,7 @@ Enter this code in the ERC721URIStorage.sol
 
 pragma solidity ^0.8.0;
 
-import "../utils/ERC721.sol";
+
 import "../interfaces/IERC721Receiver.sol";
 import "../interfaces/IERC721Metadata.sol";
 import "../libraries/Address.sol";

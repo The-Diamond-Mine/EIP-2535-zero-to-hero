@@ -12,4 +12,5 @@
 * [Building an NFT project also Housing a Marketplace](diamond-standard-implementions/building-an-nft-project-also-housing-a-marketplace/README.md)
   * [Walkthrough Diamond 3 hardhat](diamond-standard-implementions/building-an-nft-project-also-housing-a-marketplace/walkthrough-diamond-3-hardhat/README.md)
     * [Contracts](diamond-standard-implementions/building-an-nft-project-also-housing-a-marketplace/walkthrough-diamond-3-hardhat/contracts.md)
-  * [Let's get our hands dirty | NFT facet](diamond-standard-implementions/building-an-nft-project-also-housing-a-marketplace/lets-get-our-hands-dirty-or-nft-facet.md)
+  * [Let's get our hands dirty | NFT facet](diamond-standard-implementions/building-an-nft-project-also-housing-a-marketplace/lets-get-our-hands-dirty-or-nft-facet/README.md)
+    * [Talking about the imports](diamond-standard-implementions/building-an-nft-project-also-housing-a-marketplace/lets-get-our-hands-dirty-or-nft-facet/talking-about-the-imports.md)
