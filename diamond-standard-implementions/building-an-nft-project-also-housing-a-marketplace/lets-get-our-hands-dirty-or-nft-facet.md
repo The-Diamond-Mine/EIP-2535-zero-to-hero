@@ -637,5 +637,3 @@ contract ERC721 is Context, IERC721Metadata {
     }
 }
 ```
-
-#### Talking about the imports
