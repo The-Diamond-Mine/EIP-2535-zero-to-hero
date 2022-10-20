@@ -13,3 +13,5 @@ Implementing this example using the diamond standard would expose us to many ext
 
 So basically we are buidling an NFT contract what has all the basic functionality of an NFT contract and also housing a Marketplace where this NFT would be minted to other user when the pay an ERC20 token.
 
+
+
