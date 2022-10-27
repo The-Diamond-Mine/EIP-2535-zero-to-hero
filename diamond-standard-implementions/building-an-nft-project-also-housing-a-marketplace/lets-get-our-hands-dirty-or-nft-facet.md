@@ -15,15 +15,11 @@ During the course of this implementation, we would be using the NFT contract wou
 
 First, we would be setting up our storage for the NFT contract.
 
-Create a file called AppStorage.sol and a File called Counter.so
-
-The Counter.sol is a library gotten from openzeppelin. This would help us handle the counting of minted NFT and token ID.
+Create a file called AppStorage.sol in the libraries folder.
 
 ```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
-import "./Counter.sol";
-
 
 
 struct AppStorage {
@@ -34,58 +30,12 @@ struct AppStorage {
     mapping(uint256 => address) _tokenApprovals;
     mapping(address => mapping(address => bool)) _operatorApprovals;
     mapping(uint256 => string) _tokenURIs;
-    Counters.Counter _myCounter;
     uint256 MAX_SUPPLY;
+    uint256 _counter;
 }
 ```
 
-So these are all the state variables we would be needing in the NFT facet.
-
-```
-// SPDX-License-Identifier: MIT
-// OpenZeppelin Contracts v4.4.1 (utils/Counters.sol)
-
-pragma solidity ^0.8.0;
-
-/**
- * @title Counters
- * @author Matt Condon (@shrugs)
- * @dev Provides counters that can only be incremented, decremented or reset. This can be used e.g. to track the number
- * of elements in a mapping, issuing ERC721 ids, or counting request ids.
- *
- * Include with `using Counters for Counters.Counter;`
- */
-library Counters {
-    struct Counter {
-        // This variable should never be directly accessed by users of the library: interactions must be restricted to
-        // the library's function. As of Solidity v0.5.2, this cannot be enforced, though there is a proposal to add
-        // this feature: see https://github.com/ethereum/solidity/issues/4637
-        uint256 _value; // default: 0
-    }
-
-    function current(Counter storage counter) internal view returns (uint256) {
-        return counter._value;
-    }
-
-    function increment(Counter storage counter) internal {
-        unchecked {
-            counter._value += 1;
-        }
-    }
-
-    function decrement(Counter storage counter) internal {
-        uint256 value = counter._value;
-        require(value > 0, "Counter: decrement overflow");
-        unchecked {
-            counter._value = value - 1;
-        }
-    }
-
-    function reset(Counter storage counter) internal {
-        counter._value = 0;
-    }
-}
-```
+So these are all the state variables we would be needing in the NFT facet. You would notice that the Counter Library and the Counter struct were not used to keep track of the number of minted NFTs.
 
 Now the storage is ready, we can now start working on the NFT contract. We would have to work on the base NFT contract that would house all the NFT logic, then the main NFT contract would inherit the base contract.
 
