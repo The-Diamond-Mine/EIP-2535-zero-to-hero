@@ -14,3 +14,4 @@
     * [Contracts](diamond-standard-implementions/building-an-nft-project-also-housing-a-marketplace/walkthrough-diamond-3-hardhat/contracts.md)
   * [Let's get our hands dirty | NFT facet](diamond-standard-implementions/building-an-nft-project-also-housing-a-marketplace/lets-get-our-hands-dirty-or-nft-facet.md)
     * [Talking about the imports](diamond-standard-implementions/building-an-nft-project-also-housing-a-marketplace/lets-get-our-hands-dirty-or-nft-facet/talking-about-the-imports.md)
+    * [Creating the ZeroToHeroCollectionFacet.sol](diamond-standard-implementions/building-an-nft-project-also-housing-a-marketplace/lets-get-our-hands-dirty-or-nft-facet/creating-the-zerotoherocollectionfacet.sol.md)
