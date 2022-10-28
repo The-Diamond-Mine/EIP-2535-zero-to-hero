@@ -57,7 +57,7 @@ pragma solidity ^0.8.0;
 import "../interfaces/IERC721Receiver.sol";
 import "../interfaces/IERC721Metadata.sol";
 import "../libraries/Address.sol";
-import "../utils/Context.sol";
+import "./Context.sol";
 import "../libraries/Strings.sol";
 import "../libraries/AppStorage.sol";
 
